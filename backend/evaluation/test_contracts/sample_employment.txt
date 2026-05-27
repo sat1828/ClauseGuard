@@ -1,0 +1,103 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement ("Agreement") is entered into as of February 1, 2025 ("Commencement Date") between:
+
+NovaTech Solutions Pvt. Ltd., incorporated under the Companies Act, 2013, registered at 100 Innovation Park, Sector 44, Gurugram, Haryana 122003 ("Company"),
+
+AND
+
+Anjali Sharma, residing at 501 Maple Apartments, DLF Phase 2, Gurugram, Haryana 122002 ("Employee").
+
+1. POSITION AND DUTIES
+
+1.1 The Company hereby employs the Employee as Senior Software Engineer — Artificial Intelligence, reporting to the Head of Engineering.
+
+1.2 The Employee shall devote their full time, attention, and energies to the performance of their duties and shall not, without the prior written consent of the Company, engage in any other employment, consulting, or business activity.
+
+2. COMPENSATION
+
+2.1 The Company shall pay the Employee a gross annual salary of INR 28,00,000 (Indian Rupees Twenty-Eight Lakhs), payable in equal monthly installments on the last working day of each calendar month, subject to applicable statutory deductions.
+
+2.2 The Employee shall be entitled to participate in such employee benefit plans as the Company may offer from time to time, subject to the terms and conditions of such plans.
+
+3. PROBATION PERIOD
+
+3.1 The first six (6) months of employment shall constitute a probationary period during which the employment may be terminated by either party with seven (7) days written notice, or without notice if the Company determines, in its sole discretion, that the Employee's performance is unsatisfactory.
+
+4. INTELLECTUAL PROPERTY ASSIGNMENT
+
+4.1 The Employee hereby irrevocably assigns, transfers, and conveys to the Company, its successors, and assigns, all right, title, and interest (including all intellectual property rights, including patents, copyrights, trade secrets, and moral rights) in and to any and all inventions, developments, works of authorship, software, algorithms, designs, methods, processes, know-how, and improvements ("Inventions") that are made, conceived, reduced to practice, developed, or worked on by the Employee, whether alone or jointly with others:
+
+(a) at any time during the period of employment;
+(b) for a period of two (2) years after the termination of employment;
+(c) whether or not made during working hours;
+(d) whether or not made using Company equipment, resources, facilities, or Confidential Information;
+(e) whether or not the Inventions relate to the Company's current or anticipated business.
+
+4.2 The Employee acknowledges that this assignment is irrevocable and is part of the consideration for which the Company has agreed to employ the Employee.
+
+5. CONFIDENTIALITY
+
+5.1 During the term of employment and at all times thereafter, the Employee shall hold in strict confidence and shall not disclose to any third party any Confidential Information of the Company without the prior written consent of the Company.
+
+5.2 "Confidential Information" shall mean any information not generally known to the public that relates to the Company's business, including but not limited to: technical data, trade secrets, research and development information, customer lists, business plans, financial data, and software.
+
+6. NON-COMPETE
+
+6.1 During the term of employment and for a period of two (2) years following the termination of employment for any reason, the Employee shall not, directly or indirectly, anywhere in India:
+
+(a) Engage in, own, manage, operate, control, be employed by, provide services to, or participate in any Competing Business;
+(b) Act as a director, officer, employee, partner, consultant, agent, or independent contractor of any Competing Business;
+(c) Solicit or attempt to solicit any client, customer, or prospective customer of the Company for the purposes of a Competing Business.
+
+6.2 "Competing Business" means any business that develops, sells, or provides artificial intelligence software, machine learning products, or natural language processing solutions.
+
+7. NON-SOLICITATION
+
+7.1 During the term of employment and for a period of two (2) years following the termination of employment, the Employee shall not, directly or indirectly, solicit, induce, recruit, or encourage any employee or contractor of the Company to terminate their relationship with the Company.
+
+8. TERMINATION
+
+8.1 Termination by the Company for Cause. The Company may terminate this Agreement immediately, without notice or payment in lieu of notice, for cause, including but not limited to:
+(a) Gross misconduct or willful neglect of duties;
+(b) Material breach of this Agreement;
+(c) Conviction of a criminal offense;
+(d) Breach of the Company's policies or code of conduct;
+(e) Any act or omission that, in the Company's sole judgment, brings the Company into disrepute.
+
+8.2 Termination by Employee. The Employee may terminate this Agreement by providing ninety (90) days written notice to the Company. During the notice period, the Employee shall continue to perform their duties and shall not engage in any competitive activities.
+
+8.3 Termination by the Company for Convenience. The Company may terminate this Agreement at any time, without cause, by providing thirty (30) days written notice or payment in lieu of notice. The Company reserves the right to place the Employee on garden leave during any notice period.
+
+9. INDEMNIFICATION
+
+9.1 The Employee shall indemnify, defend, and hold harmless the Company and its officers, directors, shareholders, employees, and agents from and against any and all claims, demands, losses, damages, costs, and expenses (including reasonable attorney fees) arising out of or resulting from any breach of this Agreement by the Employee, or any negligent or willful act or omission of the Employee.
+
+10. DATA PROTECTION
+
+10.1 The Employee acknowledges that the Company collects and processes the Employee's personal data for employment purposes in accordance with applicable data protection laws, including the Digital Personal Data Protection Act, 2023.
+
+10.2 The Employee shall process any personal data of the Company's customers, employees, or business partners that they access during the course of their employment strictly in accordance with the Company's data protection policies and applicable law.
+
+11. GOVERNING LAW
+
+11.1 This Agreement shall be governed by and construed in accordance with the laws of India, and the courts of Gurugram, Haryana shall have exclusive jurisdiction over any disputes arising under this Agreement.
+
+12. ENTIRE AGREEMENT
+
+12.1 This Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior negotiations, representations, warranties, and understandings of the parties.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Commencement Date.
+
+NOVATECH SOLUTIONS PVT. LTD.
+
+By: _________________________
+Name: Vikram Singh
+Title: Head of Human Resources
+Date: February 1, 2025
+
+EMPLOYEE
+
+By: _________________________
+Name: Anjali Sharma
+Date: February 1, 2025

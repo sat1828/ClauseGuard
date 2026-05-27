@@ -1,0 +1,52 @@
+version: "3.9"
+
+# ClauseGuard Local Development Stack
+# =====================================
+# Provides: PostgreSQL 15 with pgvector extension
+#
+# Usage:
+#   docker-compose up -d          # start services
+#   docker-compose down           # stop services
+#   docker-compose down -v        # stop and wipe volumes (fresh start)
+#
+# Note: Pinecone runs as a managed cloud service — no local container needed.
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg15
+    # Using pgvector's official PostgreSQL image — includes the vector extension
+    # pre-installed. Standard postgres:15 image does NOT have pgvector.
+    container_name: clauseguard_postgres
+    environment:
+      POSTGRES_USER: clauseguard
+      POSTGRES_PASSWORD: clauseguard_pass
+      POSTGRES_DB: clauseguard
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/migrations/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U clauseguard -d clauseguard"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Redis is included for future use (rate limiting, caching analysis results).
+  # Not required for the current pipeline but common in production deployments.
+  redis:
+    image: redis:7-alpine
+    container_name: clauseguard_redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local

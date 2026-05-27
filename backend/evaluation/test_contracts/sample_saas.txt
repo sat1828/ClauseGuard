@@ -1,0 +1,101 @@
+SOFTWARE AS A SERVICE SUBSCRIPTION AGREEMENT
+
+This Software as a Service Subscription Agreement ("Agreement") is entered into as of March 1, 2025 ("Effective Date") between:
+
+CloudPlatform Inc., a Delaware corporation with principal offices at 500 Technology Square, San Francisco, California 94105, USA ("Provider"),
+
+AND
+
+Bright Solutions Pvt. Ltd., a company incorporated under the Companies Act, 2013, registered at 22 Business Hub, Andheri East, Mumbai, Maharashtra 400069, India ("Customer").
+
+1. SUBSCRIPTION AND LICENSE
+
+1.1 Grant of License. Subject to the terms of this Agreement and payment of all applicable fees, Provider grants to Customer a limited, non-exclusive, non-transferable, revocable license to access and use the CloudPlatform software-as-a-service platform ("Service") solely for Customer's internal business operations.
+
+1.2 Restrictions. Customer shall not: (a) sublicense, sell, resell, transfer, or assign the Service; (b) copy or duplicate the Service; (c) create derivative works based on the Service; (d) reverse engineer, decompile, or disassemble the Service; (e) access the Service to build a competing product.
+
+2. PAYMENT TERMS
+
+2.1 Subscription Fees. Customer shall pay Provider an annual subscription fee of USD 24,000 (Twenty-Four Thousand US Dollars), invoiced annually in advance on the anniversary of the Effective Date.
+
+2.2 Payment Due Date. All invoices are due and payable within fifteen (15) days of the invoice date.
+
+2.3 Late Payment. If any amount owing is fifteen (15) or more days overdue, Provider may, without limiting its other rights and remedies: (a) charge interest on the overdue amount at the rate of 1.5% per month (18% per annum); (b) condition future renewals and service continuity on the payment of overdue amounts; (c) suspend access to the Service until all overdue amounts are paid in full.
+
+3. TERM AND AUTO-RENEWAL
+
+3.1 Initial Term. This Agreement shall commence on the Effective Date and shall continue for a period of one (1) year ("Initial Term").
+
+3.2 Automatic Renewal. IMPORTANT: THIS AGREEMENT WILL AUTOMATICALLY RENEW FOR SUCCESSIVE ONE-YEAR TERMS AT THE END OF THE INITIAL TERM AND AT THE END OF EACH RENEWAL TERM UNLESS EITHER PARTY PROVIDES WRITTEN NOTICE OF NON-RENEWAL AT LEAST NINETY (90) DAYS PRIOR TO THE END OF THE THEN-CURRENT TERM. Customer acknowledges that it is solely responsible for tracking the renewal date and providing timely notice of non-renewal.
+
+3.3 Price Adjustments. Provider reserves the right to adjust subscription fees at the beginning of any Renewal Term by providing Customer with at least thirty (30) days written notice prior to the commencement of such Renewal Term.
+
+4. DATA PROTECTION AND SECURITY
+
+4.1 Customer Data. Customer retains all right, title, and interest in and to all data submitted by Customer to the Service ("Customer Data"). Provider shall not access, use, or disclose Customer Data except as necessary to provide the Service or as required by law.
+
+4.2 Data Processing. Provider processes Customer Data as a data processor acting on the instructions of Customer. Provider shall implement and maintain appropriate technical and organizational measures to protect Customer Data against unauthorized access, disclosure, alteration, or destruction.
+
+4.3 Data Deletion. Upon termination of this Agreement, Provider shall delete or return all Customer Data within thirty (30) days of the termination date, subject to any legal requirements to retain data.
+
+4.4 Sub-processors. Provider may engage sub-processors to assist in providing the Service. Provider shall ensure that sub-processors are bound by data protection obligations no less protective than those set forth herein.
+
+5. SERVICE LEVELS AND AVAILABILITY
+
+5.1 Uptime Commitment. Provider will use commercially reasonable efforts to ensure that the Service is available 99.5% of the time in any given calendar month, excluding scheduled maintenance.
+
+5.2 Scheduled Maintenance. Provider shall provide at least forty-eight (48) hours advance notice of scheduled maintenance that may affect Service availability.
+
+6. LIMITATION OF LIABILITY
+
+6.1 EXCLUSION OF CONSEQUENTIAL DAMAGES. IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATED TO THIS AGREEMENT, REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE OR THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+6.2 AGGREGATE LIABILITY CAP. PROVIDER'S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL NOT EXCEED THE TOTAL FEES PAID BY CUSTOMER IN THE TWELVE (12) MONTHS PRECEDING THE INCIDENT GIVING RISE TO THE LIABILITY.
+
+6.3 UNLIMITED CUSTOMER LIABILITY. NOTWITHSTANDING THE FOREGOING, CUSTOMER'S LIABILITY TO PROVIDER SHALL NOT BE LIMITED OR CAPPED IN ANY WAY AND CUSTOMER SHALL BE FULLY LIABLE TO PROVIDER FOR ANY AND ALL DAMAGES, LOSSES, AND COSTS ARISING FROM CUSTOMER'S BREACH OF THIS AGREEMENT, INCLUDING BREACH OF THE LICENSE RESTRICTIONS IN SECTION 1.2.
+
+7. WARRANTIES AND DISCLAIMERS
+
+7.1 Provider Warranties. Provider warrants that: (a) it has the right and authority to enter into this Agreement; (b) the Service will perform materially in accordance with the documentation.
+
+7.2 DISCLAIMER. EXCEPT AS EXPRESSLY SET FORTH IN SECTION 7.1, THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. PROVIDER DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.
+
+8. TERMINATION FOR CONVENIENCE
+
+8.1 Either party may terminate this Agreement for convenience by providing thirty (30) days written notice. In the event of termination by Customer for convenience, no refund of prepaid subscription fees shall be issued.
+
+8.2 Provider Termination Rights. Provider may terminate or suspend this Agreement or Customer's access to the Service immediately upon written notice if Customer: (a) materially breaches this Agreement and fails to cure such breach within ten (10) days; (b) becomes insolvent or bankrupt; (c) violates the license restrictions in Section 1.2.
+
+9. GOVERNING LAW
+
+9.1 This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law provisions.
+
+9.2 Any dispute shall be submitted to the exclusive jurisdiction of the federal and state courts located in San Francisco, California. Customer hereby irrevocably consents to the personal jurisdiction of such courts.
+
+10. ASSIGNMENT
+
+10.1 Customer may not assign this Agreement or any rights hereunder without the prior written consent of Provider. Provider may assign this Agreement in connection with a merger, acquisition, or sale of all or substantially all of its assets without Customer consent.
+
+11. AUDIT RIGHTS
+
+11.1 Upon reasonable prior written notice (not less than ten business days), Provider may audit Customer's use of the Service to verify compliance with this Agreement. Customer shall cooperate with any such audit and provide access to its facilities, systems, and records as reasonably necessary.
+
+12. ENTIRE AGREEMENT
+
+12.1 This Agreement, together with any Order Forms or Statements of Work executed by the parties, constitutes the entire agreement between the parties with respect to its subject matter.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+CLOUDPLATFORM INC.
+
+By: _________________________
+Name: Sarah Johnson
+Title: Chief Revenue Officer
+Date: March 1, 2025
+
+BRIGHT SOLUTIONS PVT. LTD.
+
+By: _________________________
+Name: Rahul Desai
+Title: Managing Director
+Date: March 1, 2025

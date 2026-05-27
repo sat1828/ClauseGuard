@@ -1,0 +1,88 @@
+NON-DISCLOSURE AGREEMENT
+
+This Non-Disclosure Agreement ("Agreement") is entered into as of January 15, 2025 ("Effective Date") between:
+
+Acme Technologies Pvt. Ltd., a company incorporated under the Companies Act, 2013, having its registered office at 42 Techpark Road, Bengaluru, Karnataka 560001, India ("Disclosing Party"),
+
+AND
+
+Ravi Kumar, residing at 12 Apartment Complex, Koramangala, Bengaluru, Karnataka 560034, India ("Receiving Party").
+
+RECITALS
+
+WHEREAS, the Disclosing Party possesses certain confidential and proprietary information relating to its business operations, technology, and customer relationships; and
+
+WHEREAS, the Receiving Party wishes to evaluate a potential business relationship with the Disclosing Party, and in connection with such evaluation, the Disclosing Party is willing to disclose certain Confidential Information to the Receiving Party subject to the terms and conditions set forth herein;
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements set forth herein, the parties agree as follows:
+
+1. DEFINITIONS
+
+1.1 "Confidential Information" means any and all information or data that has or could have commercial value or other utility in the business in which the Disclosing Party is engaged. If Confidential Information is in written form, the Disclosing Party shall label or stamp the materials with the word "Confidential" or some similar warning. If Confidential Information is transmitted orally, the Disclosing Party shall promptly provide writing indicating that such oral communication constituted Confidential Information.
+
+1.2 "Permitted Purpose" means the evaluation of a potential business relationship between the parties, specifically relating to the development of enterprise software solutions.
+
+2. CONFIDENTIALITY OBLIGATIONS
+
+2.1 The Receiving Party agrees to:
+(a) Hold the Confidential Information in strict confidence;
+(b) Not disclose the Confidential Information to any third party without the prior written consent of the Disclosing Party;
+(c) Use the Confidential Information solely for the Permitted Purpose;
+(d) Protect the Confidential Information with the same degree of care used to protect its own confidential information, but in no event less than reasonable care;
+(e) Limit access to Confidential Information to those employees, contractors, or agents who have a genuine need to know such information and are bound by confidentiality obligations at least as protective as those herein.
+
+3. EXCLUSIONS FROM CONFIDENTIAL INFORMATION
+
+3.1 The obligations of confidentiality under this Agreement shall not apply to information that:
+(a) Is or becomes publicly available through no breach of this Agreement;
+(b) Was rightfully known to the Receiving Party before disclosure without restriction;
+(c) Is rightfully received from a third party without restriction on disclosure;
+(d) Is independently developed by the Receiving Party without use of or reference to the Confidential Information;
+(e) Is required to be disclosed by applicable law, regulation, or court order, provided that the Receiving Party gives the Disclosing Party prompt written notice of such requirement prior to disclosure.
+
+4. TERM AND SURVIVAL
+
+4.1 This Agreement shall commence on the Effective Date and shall continue for a period of three (3) years.
+
+4.2 The obligations of confidentiality shall survive the termination or expiration of this Agreement for a further period of two (2) years, for a total confidentiality period of five (5) years from the Effective Date.
+
+5. RETURN OF INFORMATION
+
+5.1 Upon request by the Disclosing Party, or upon termination of this Agreement, the Receiving Party shall promptly return or destroy all Confidential Information, including all copies, extracts, and summaries thereof, and certify in writing that such return or destruction has been completed.
+
+6. NO LICENSE
+
+6.1 Nothing in this Agreement shall be construed as granting any rights, by license or otherwise, to the Receiving Party in or to the Confidential Information, or to any patent, copyright, trademark, or trade secret of the Disclosing Party.
+
+7. GOVERNING LAW AND DISPUTE RESOLUTION
+
+7.1 This Agreement shall be governed by and construed in accordance with the laws of India, and specifically the laws of the State of Karnataka, without regard to its conflict of law provisions.
+
+7.2 Any dispute arising out of or in connection with this Agreement, including any question regarding its existence, validity, or termination, shall be referred to and finally resolved by arbitration administered by the Indian Council of Arbitration in accordance with its rules, which rules are deemed to be incorporated by reference into this clause. The seat of arbitration shall be Bengaluru, Karnataka. The language of the arbitration shall be English.
+
+8. GENERAL PROVISIONS
+
+8.1 Entire Agreement. This Agreement constitutes the entire agreement between the parties with respect to its subject matter and supersedes all prior and contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written.
+
+8.2 Amendments. This Agreement may not be amended or modified except by a written instrument signed by both parties.
+
+8.3 Severability. If any provision of this Agreement is held to be invalid, illegal, or unenforceable in any respect, such invalidity, illegality, or unenforceability shall not affect any other provision, and this Agreement shall be construed as if such invalid, illegal, or unenforceable provision had never been contained herein.
+
+8.4 Waiver. The failure of either party to enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision.
+
+8.5 Notice. All notices under this Agreement shall be in writing and delivered by registered post, courier, or hand delivery to the addresses set forth above, or by email to addresses designated in writing by each party.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+ACME TECHNOLOGIES PVT. LTD.
+
+By: _________________________
+Name: Priya Mehta
+Title: Chief Executive Officer
+Date: January 15, 2025
+
+RECEIVING PARTY
+
+By: _________________________
+Name: Ravi Kumar
+Date: January 15, 2025
