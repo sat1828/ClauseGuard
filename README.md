@@ -432,8 +432,4 @@ ClauseGuard is not a law firm. This is not legal advice. All analysis is informa
 
 <div align="center">
 
-Built with Claude Sonnet 4 · Deployed on Vercel + Railway
-
-[clauseguard.vercel.app](https://clauseguard.vercel.app) · [API Docs](https://clauseguard-api.railway.app/docs)
-
 </div>
