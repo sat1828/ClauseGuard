@@ -1,0 +1,135 @@
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" width="900" height="400">
+  <defs>
+    <style>
+      @keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+      @keyframes flowDot {
+        0%   { offset-distance: 0%;   opacity: 0; }
+        5%   { opacity: 1; }
+        95%  { opacity: 1; }
+        100% { offset-distance: 100%; opacity: 0; }
+      }
+      @keyframes pulseDot { 0%,100%{r:4px} 50%{r:6px} }
+      @keyframes slideRight { from{width:0} to{width:100%} }
+      .stage { animation: fadeIn 0.5s ease both; }
+      .s0  { animation-delay: 0.1s; }
+      .s1  { animation-delay: 0.3s; }
+      .s2  { animation-delay: 0.5s; }
+      .s25 { animation-delay: 0.7s; }
+      .s3  { animation-delay: 0.9s; }
+      .s4  { animation-delay: 1.1s; }
+      .s5  { animation-delay: 1.3s; }
+      .s6  { animation-delay: 1.5s; }
+      .s7  { animation-delay: 1.7s; }
+      .tl  { font-family:'Courier New',monospace; font-size:10px; font-weight:bold; }
+      .ts  { font-family:'Courier New',monospace; font-size:8.5px; }
+      .th  { font-family:'Georgia',serif; font-size:11px; }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="400" fill="#0f172a"/>
+
+  <!-- Title -->
+  <g class="stage s0">
+    <text x="450" y="34" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#475569" letter-spacing="3">7-STAGE DETERMINISTIC PIPELINE · FASTAPI BACKGROUNDTASK</text>
+  </g>
+
+  <!-- INPUT BOX -->
+  <g class="stage s0">
+    <rect x="350" y="46" width="200" height="40" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="450" y="62" text-anchor="middle" class="tl" fill="#94a3b8">FILE UPLOAD</text>
+    <text x="450" y="76" text-anchor="middle" class="ts" fill="#475569">PDF · DOCX · TXT  ·  up to 50 pages</text>
+  </g>
+  <line x1="450" y1="86" x2="450" y2="102" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 0 -->
+  <g class="stage s1">
+    <rect x="230" y="104" width="440" height="44" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="230" y="104" width="5" height="44" rx="2" fill="#3b82f6"/>
+    <text x="460" y="122" text-anchor="middle" class="tl" fill="#93c5fd">STAGE 0 — CONTRACT CLASSIFICATION</text>
+    <text x="460" y="137" text-anchor="middle" class="ts" fill="#475569">Claude Sonnet 4 · temp=0 · NDA / Employment / SaaS / Lease / Service / Unknown</text>
+    <text x="658" y="122" class="ts" fill="#3b82f6">~93% acc</text>
+  </g>
+  <line x1="450" y1="148" x2="450" y2="162" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 1 -->
+  <g class="stage s2">
+    <rect x="230" y="164" width="440" height="44" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="230" y="164" width="5" height="44" rx="2" fill="#6366f1"/>
+    <text x="460" y="182" text-anchor="middle" class="tl" fill="#c7d2fe">STAGE 1 — DOCUMENT PARSING</text>
+    <text x="460" y="197" text-anchor="middle" class="ts" fill="#475569">PyMuPDF (fitz) + python-docx · PageBlocks + DefinedTermsGlossary extraction</text>
+  </g>
+  <line x1="450" y1="208" x2="450" y2="222" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 2 -->
+  <g class="stage s25">
+    <rect x="230" y="224" width="440" height="44" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="230" y="224" width="5" height="44" rx="2" fill="#8b5cf6"/>
+    <text x="460" y="242" text-anchor="middle" class="tl" fill="#ddd6fe">STAGE 2 — LEGAL-AWARE CHUNKING</text>
+    <text x="460" y="257" text-anchor="middle" class="ts" fill="#475569">Custom boundary detector · heading hard-stops · defined terms injected into every chunk header</text>
+  </g>
+  <line x1="450" y1="268" x2="450" y2="282" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 2.5 -->
+  <g class="stage s3">
+    <rect x="230" y="284" width="440" height="44" rx="6" fill="#1e293b" stroke="#22c55e" stroke-width="1"/>
+    <rect x="230" y="284" width="5" height="44" rx="2" fill="#22c55e"/>
+    <text x="460" y="302" text-anchor="middle" class="tl" fill="#86efac">STAGE 2.5 — EMBED + PINECONE UPSERT</text>
+    <text x="460" y="317" text-anchor="middle" class="ts" fill="#475569">OpenAI text-embedding-3-small (1536d) · per-contract namespace · cosine similarity</text>
+  </g>
+
+  <!-- SPLIT ARROW DOWN then branch to 3 bottom stages -->
+  <line x1="450" y1="328" x2="450" y2="342" stroke="#334155" stroke-width="1.5"/>
+  <line x1="190" y1="342" x2="710" y2="342" stroke="#334155" stroke-width="1"/>
+  <line x1="280" y1="342" x2="280" y2="356" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="450" y1="342" x2="450" y2="356" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="620" y1="342" x2="620" y2="356" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- STAGE 3 -->
+  <g class="stage s4">
+    <rect x="100" y="358" width="360" height="36" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="100" y="358" width="5" height="36" rx="2" fill="#3b82f6"/>
+    <text x="282" y="373" text-anchor="middle" class="tl" fill="#93c5fd">STAGE 3 — CLAUSE EXTRACTION</text>
+    <text x="282" y="386" text-anchor="middle" class="ts" fill="#475569">Claude · batch=5 · temp=0 · 30 clause types</text>
+  </g>
+
+  <!-- STAGE 4 -->
+  <g class="stage s5">
+    <rect x="280" y="358" width="340" height="36" rx="6" fill="#1e293b" stroke="#dc2626" stroke-width="1"/>
+    <rect x="280" y="358" width="5" height="36" rx="2" fill="#dc2626"/>
+    <text x="452" y="373" text-anchor="middle" class="tl" fill="#fca5a5">STAGE 4 — RISK SCORING</text>
+    <text x="452" y="386" text-anchor="middle" class="ts" fill="#475569">8-dim rubric · temp=0 enforced · CRITICAL/HIGH/MEDIUM/LOW</text>
+  </g>
+
+  <!-- STAGE 5 -->
+  <g class="stage s6">
+    <rect x="460" y="358" width="340" height="36" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <rect x="460" y="358" width="5" height="36" rx="2" fill="#f59e0b"/>
+    <text x="632" y="373" text-anchor="middle" class="tl" fill="#fcd34d">STAGE 5 — ALTERNATIVES</text>
+    <text x="632" y="386" text-anchor="middle" class="ts" fill="#475569">Claude · temp=0.1 · safer replacements</text>
+  </g>
+
+  <!-- Bottom labels -->
+  <g class="stage s7">
+    <text x="450" y="408" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#334155">
+      STAGE 6: Missing clause detection (rule-based template comparison) ·  STAGE 7: RAG Q&amp;A via SSE streaming + Pinecone retrieval + page citations
+    </text>
+  </g>
+
+  <!-- Animated flow dots -->
+  <circle r="3.5" fill="#3b82f6" opacity="0">
+    <animateMotion dur="3s" repeatCount="indefinite" begin="1s">
+      <mpath href="#flow-path-1"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <path id="flow-path-1" d="M450 86 L450 104" fill="none" visibility="hidden"/>
+</svg>

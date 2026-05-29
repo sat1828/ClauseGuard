@@ -1,0 +1,141 @@
+<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" width="900" height="420">
+  <defs>
+    <style>
+      @keyframes fadeUp  { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes popIn   { from{opacity:0;transform:scale(0.88)} to{opacity:1;transform:scale(1)} }
+      @keyframes progressFill { from{width:0} to{width:65%} }
+      @keyframes checkPop{ from{opacity:0;transform:scale(0)} to{opacity:1;transform:scale(1)} }
+      @keyframes pulse   { 0%,100%{opacity:1} 50%{opacity:0.4} }
+      @keyframes spin    { from{stroke-dashoffset:44} to{stroke-dashoffset:-44} }
+      @keyframes dotBounce{ 0%,80%,100%{transform:translateY(0)} 40%{transform:translateY(-4px)} }
+    </style>
+  </defs>
+
+  <rect width="900" height="420" fill="#f8fafc"/>
+
+  <!-- Nav -->
+  <rect width="900" height="44" fill="white" stroke="#e2e8f0" stroke-width="0.5" style="animation:fadeUp 0.3s ease both"/>
+  <text x="20" y="28" font-family="'Georgia',serif" font-size="14" font-weight="bold" fill="#0f172a">⚖ ClauseGuard</text>
+  <text x="200" y="28" font-family="'Courier New',monospace" font-size="10" fill="#94a3b8">Upload · Analyse · Review</text>
+
+  <!-- TWO COLUMN LAYOUT -->
+  <!-- LEFT: Upload card -->
+  <rect x="12" y="56" width="430" height="352" rx="8" fill="white" stroke="#e2e8f0" stroke-width="0.5" style="animation:popIn 0.5s ease both; animation-delay:0.2s"/>
+  <text x="28" y="80" font-family="'Georgia',serif" font-size="14" font-weight="bold" fill="#0f172a" style="animation:fadeUp 0.4s ease both; animation-delay:0.3s">Upload a contract</text>
+  <text x="28" y="96" font-family="'Courier New',monospace" font-size="9" fill="#94a3b8" style="animation:fadeUp 0.4s ease both; animation-delay:0.35s">PDF · DOCX · TXT — up to 50 pages</text>
+
+  <!-- Drop zone -->
+  <rect x="24" y="106" width="410" height="148" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" style="animation:fadeUp 0.5s ease both; animation-delay:0.4s"/>
+  <rect x="178" y="132" width="56" height="56" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" style="animation:fadeUp 0.5s ease both; animation-delay:0.5s"/>
+  <text x="206" y="167" text-anchor="middle" font-size="26" fill="#94a3b8" style="animation:fadeUp 0.5s ease both; animation-delay:0.5s">↑</text>
+  <text x="229" y="208" text-anchor="middle" font-family="'Georgia',serif" font-size="13" font-weight="bold" fill="#334155" style="animation:fadeUp 0.5s ease both; animation-delay:0.55s">Drop your contract here</text>
+  <text x="229" y="224" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#94a3b8" style="animation:fadeUp 0.5s ease both; animation-delay:0.6s">or click to browse files</text>
+
+  <!-- Format pills -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:0.7s">
+    <rect x="148" y="232" width="30" height="16" rx="3" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="163" y="243" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">PDF</text>
+    <rect x="184" y="232" width="36" height="16" rx="3" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="202" y="243" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">DOCX</text>
+    <rect x="226" y="232" width="30" height="16" rx="3" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="241" y="243" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">TXT</text>
+    <rect x="262" y="232" width="26" height="16" rx="3" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="275" y="243" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">max</text>
+  </g>
+
+  <!-- Upload button -->
+  <rect x="24" y="262" width="410" height="32" rx="6" fill="#0f172a" style="animation:fadeUp 0.4s ease both; animation-delay:0.75s"/>
+  <text x="229" y="282" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="white">↑ Choose file</text>
+
+  <!-- Contract types grid -->
+  <text x="28" y="316" font-family="'Courier New',monospace" font-size="9" fill="#94a3b8" letter-spacing="1" style="animation:fadeUp 0.4s ease both; animation-delay:0.8s">CONTRACT TYPES SUPPORTED</text>
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:0.85s">
+    <rect x="24" y="322" width="95" height="24" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="71" y="338" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#475569">📋 Employment</text>
+    <rect x="125" y="322" width="68" height="24" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="159" y="338" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#475569">🔒 NDA</text>
+    <rect x="199" y="322" width="62" height="24" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="230" y="338" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#475569">🏠 Lease</text>
+    <rect x="267" y="322" width="58" height="24" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="296" y="338" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#475569">☁ SaaS</text>
+    <rect x="331" y="322" width="68" height="24" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="365" y="338" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#475569">🔧 Service</text>
+  </g>
+
+  <!-- RIGHT: Progress card -->
+  <rect x="458" y="56" width="430" height="352" rx="8" fill="white" stroke="#e2e8f0" stroke-width="0.5" style="animation:popIn 0.5s ease both; animation-delay:0.3s"/>
+  <text x="474" y="80" font-family="'Georgia',serif" font-size="14" font-weight="bold" fill="#0f172a">Analysis in progress</text>
+
+  <!-- File info bar -->
+  <rect x="470" y="88" width="406" height="40" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5" style="animation:fadeUp 0.4s ease both; animation-delay:0.45s"/>
+  <rect x="478" y="96" width="24" height="24" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="0.5"/>
+  <text x="490" y="112" text-anchor="middle" font-size="12" fill="#dc2626">📄</text>
+  <text x="510" y="106" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#334155">employment_agreement_june2025.pdf</text>
+  <text x="510" y="120" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">14 pages · 1.2 MB · Uploaded 3s ago</text>
+
+  <!-- Progress bar -->
+  <rect x="470" y="136" width="406" height="6" rx="3" fill="#f1f5f9" style="animation:fadeUp 0.4s ease both; animation-delay:0.5s"/>
+  <rect x="470" y="136" height="6" rx="3" fill="#22c55e" style="animation:fadeUp 0.4s ease both; animation-delay:0.5s">
+    <animate attributeName="width" from="0" to="264" dur="1.2s" begin="0.6s" fill="freeze"/>
+  </rect>
+  <text x="876" y="144" text-anchor="end" font-family="'Courier New',monospace" font-size="8" fill="#22c55e" style="animation:fadeUp 0.4s ease both; animation-delay:0.6s">65%</text>
+
+  <!-- Stage list -->
+  <!-- Stage 0: done -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:0.55s">
+    <rect x="470" y="152" width="406" height="30" rx="5" fill="#f0fdf4"/>
+    <circle cx="486" cy="167" r="8" fill="#22c55e"/>
+    <text x="486" y="171" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="white">✓</text>
+    <text x="502" y="165" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#166534">Contract classification</text>
+    <text x="502" y="177" font-family="'Courier New',monospace" font-size="8" fill="#4ade80">Employment · 93% confidence</text>
+  </g>
+  <!-- Stage 1: done -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:0.65s">
+    <rect x="470" y="186" width="406" height="30" rx="5" fill="#f0fdf4"/>
+    <circle cx="486" cy="201" r="8" fill="#22c55e"/>
+    <text x="486" y="205" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="white">✓</text>
+    <text x="502" y="199" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#166534">Document parsing</text>
+    <text x="502" y="211" font-family="'Courier New',monospace" font-size="8" fill="#4ade80">247 PageBlocks · DefinedTermsGlossary built</text>
+  </g>
+  <!-- Stage 2: done -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:0.75s">
+    <rect x="470" y="220" width="406" height="30" rx="5" fill="#f0fdf4"/>
+    <circle cx="486" cy="235" r="8" fill="#22c55e"/>
+    <text x="486" y="239" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="white">✓</text>
+    <text x="502" y="233" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#166534">Legal-aware chunking</text>
+    <text x="502" y="245" font-family="'Courier New',monospace" font-size="8" fill="#4ade80">38 chunks · defined terms injected into headers</text>
+  </g>
+  <!-- Stage 2.5: done -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:0.85s">
+    <rect x="470" y="254" width="406" height="30" rx="5" fill="#f0fdf4"/>
+    <circle cx="486" cy="269" r="8" fill="#22c55e"/>
+    <text x="486" y="273" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="white">✓</text>
+    <text x="502" y="267" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#166534">Embed + Pinecone upsert</text>
+    <text x="502" y="279" font-family="'Courier New',monospace" font-size="8" fill="#4ade80">38 vectors upserted · namespace: contract-uuid</text>
+  </g>
+  <!-- Stage 3: ACTIVE -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:0.95s">
+    <rect x="470" y="288" width="406" height="30" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="0.5"/>
+    <!-- Spinner -->
+    <circle cx="486" cy="303" r="8" fill="none" stroke="#bfdbfe" stroke-width="2"/>
+    <circle cx="486" cy="303" r="8" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="14 38"
+      style="animation:spin 1s linear infinite; transform-origin:486px 303px"/>
+    <text x="502" y="301" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#1d4ed8">Clause extraction — RUNNING</text>
+    <text x="502" y="313" font-family="'Courier New',monospace" font-size="8" fill="#60a5fa">Batch 3 of 8 · Claude Sonnet 4 · temp=0</text>
+  </g>
+  <!-- Stage 4-6: pending -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:1.0s">
+    <rect x="470" y="322" width="406" height="24" rx="5" fill="#f8fafc" opacity="0.5"/>
+    <circle cx="486" cy="334" r="8" fill="#e2e8f0"/>
+    <text x="486" y="338" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">5</text>
+    <text x="502" y="337" font-family="'Courier New',monospace" font-size="9" fill="#94a3b8">Risk scoring · 8-dimension rubric · temp=0</text>
+    <rect x="470" y="350" width="406" height="24" rx="5" fill="#f8fafc" opacity="0.35"/>
+    <circle cx="486" cy="362" r="8" fill="#e2e8f0"/>
+    <text x="486" y="366" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">6</text>
+    <text x="502" y="365" font-family="'Courier New',monospace" font-size="9" fill="#94a3b8">Alternative generation · safer replacements</text>
+    <rect x="470" y="378" width="406" height="24" rx="5" fill="#f8fafc" opacity="0.25"/>
+    <circle cx="486" cy="390" r="8" fill="#e2e8f0"/>
+    <text x="486" y="394" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">7</text>
+    <text x="502" y="393" font-family="'Courier New',monospace" font-size="9" fill="#94a3b8">Missing clause detection · template comparison</text>
+  </g>
+</svg>

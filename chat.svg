@@ -1,0 +1,112 @@
+<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" width="900" height="420">
+  <defs>
+    <style>
+      @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes popIn  { from{opacity:0;transform:scale(0.9)} to{opacity:1;transform:scale(1)} }
+      @keyframes typewriter {
+        0%   { clip-path: inset(0 100% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+      @keyframes dotBounce {
+        0%,80%,100% { transform: translateY(0); opacity: 0.4; }
+        40%          { transform: translateY(-5px); opacity: 1; }
+      }
+      @keyframes streamIn {
+        from { width: 0; }
+        to   { width: 440px; }
+      }
+      @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    </style>
+  </defs>
+
+  <rect width="900" height="420" fill="#f8fafc"/>
+
+  <!-- Nav -->
+  <rect width="900" height="44" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="28" y="28" font-family="'Georgia',serif" font-size="14" font-weight="bold" fill="#0f172a">⚖ ClauseGuard</text>
+  <text x="200" y="28" font-family="'Courier New',monospace" font-size="10" fill="#94a3b8">Contract Q&amp;A · Stage 7 · Pinecone RAG</text>
+  <rect x="720" y="12" width="168" height="20" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="0.5"/>
+  <circle cx="733" cy="22" r="4" fill="#22c55e" style="animation:pulse 1.5s infinite"/>
+  <text x="834" y="26" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#166534">Grounded · your doc only</text>
+
+  <!-- Info banner -->
+  <rect x="12" y="52" width="876" height="26" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="0.5" style="animation:fadeUp 0.5s ease both; animation-delay:0.2s"/>
+  <text x="22" y="69" font-family="'Courier New',monospace" font-size="9" fill="#1d4ed8">ℹ  Answers grounded in retrieved sections of this specific contract. If the answer isn't in the document, the model says so — explicitly.</text>
+
+  <!-- CHAT BUBBLES -->
+  <!-- User message 1 -->
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:0.4s">
+    <rect x="618" y="88" width="270" height="36" rx="8" fill="#0f172a"/>
+    <path d="M884 108 L892 116 L880 112Z" fill="#0f172a"/>
+    <text x="753" y="106" text-anchor="middle" font-family="'Georgia',serif" font-size="11" fill="white">What does clause 8.3 mean</text>
+    <text x="753" y="120" text-anchor="middle" font-family="'Georgia',serif" font-size="11" fill="white">for my side projects?</text>
+    <text x="884" y="134" text-anchor="end" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">You</text>
+  </g>
+
+  <!-- AI response 1 -->
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:0.9s">
+    <rect x="12" y="144" width="480" height="88" rx="8" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+    <path d="M16 168 L8 176 L20 172Z" fill="white"/>
+    <text x="22" y="164" font-family="'Georgia',serif" font-size="11" fill="#334155">Based on §8.3 (page 6), the IP assignment applies to "work created</text>
+    <text x="22" y="180" font-family="'Georgia',serif" font-size="11" fill="#334155">in connection with your employment." Personal side projects that</text>
+    <text x="22" y="196" font-family="'Georgia',serif" font-size="11" fill="#334155">clearly don't overlap with company's domain have a reasonable</text>
+    <text x="22" y="212" font-family="'Georgia',serif" font-size="11" fill="#334155">exclusion argument — but "in connection" is undefined. Get it in writing.</text>
+    <!-- Citations -->
+    <rect x="20" y="218" width="76" height="16" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="0.5"/>
+    <text x="58" y="229" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#1d4ed8">§8.3 · Page 6</text>
+    <rect x="102" y="218" width="76" height="16" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="0.5"/>
+    <text x="140" y="229" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#1d4ed8">§9.1 · Page 7</text>
+    <text x="14" y="248" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">ClauseGuard · 2 sources retrieved from Pinecone</text>
+  </g>
+
+  <!-- User message 2 -->
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:1.4s">
+    <rect x="560" y="252" width="328" height="26" rx="8" fill="#0f172a"/>
+    <text x="724" y="269" text-anchor="middle" font-family="'Georgia',serif" font-size="11" fill="white">Is there a severability clause?</text>
+    <text x="884" y="286" text-anchor="end" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">You</text>
+  </g>
+
+  <!-- AI REFUSAL (hard-coded refusal phrase from README) -->
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:1.9s">
+    <rect x="12" y="290" width="480" height="48" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="12" y="290" width="4" height="48" rx="2" fill="#94a3b8"/>
+    <text x="24" y="310" font-family="'Georgia',serif" font-size="11" fill="#64748b" font-style="italic">This specific point is not addressed in the contract</text>
+    <text x="24" y="326" font-family="'Georgia',serif" font-size="11" fill="#64748b" font-style="italic">you uploaded. No severability clause found across 14 pages.</text>
+    <text x="14" y="348" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">ClauseGuard · Model declined to speculate · Answer not in document</text>
+  </g>
+
+  <!-- User message 3 -->
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:2.4s">
+    <rect x="536" y="356" width="352" height="26" rx="8" fill="#0f172a"/>
+    <text x="712" y="373" text-anchor="middle" font-family="'Georgia',serif" font-size="11" fill="white">What's the notice period if I resign?</text>
+    <text x="884" y="390" text-anchor="end" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">You</text>
+  </g>
+
+  <!-- Streaming response dots -->
+  <g style="animation:fadeUp 0.4s ease both; animation-delay:2.9s">
+    <rect x="12" y="356" width="100" height="32" rx="8" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+    <circle cx="36" cy="372" r="4" fill="#3b82f6" style="animation:dotBounce 1.2s infinite; animation-delay:2.9s"/>
+    <circle cx="52" cy="372" r="4" fill="#3b82f6" style="animation:dotBounce 1.2s infinite; animation-delay:3.1s"/>
+    <circle cx="68" cy="372" r="4" fill="#3b82f6" style="animation:dotBounce 1.2s infinite; animation-delay:3.3s"/>
+    <text x="22" y="400" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8">Streaming via SSE · Claude Sonnet 4</text>
+  </g>
+
+  <!-- Input box -->
+  <rect x="12" y="394" width="786" height="20" rx="5" fill="white" stroke="#e2e8f0" stroke-width="0.5" style="animation:fadeUp 0.4s ease both; animation-delay:0.3s"/>
+  <text x="22" y="407" font-family="'Courier New',monospace" font-size="9" fill="#cbd5e1">Ask anything about your contract...</text>
+  <rect x="802" y="394" width="86" height="20" rx="5" fill="#0f172a" style="animation:fadeUp 0.4s ease both; animation-delay:0.3s"/>
+  <text x="845" y="407" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="white">Send ↵</text>
+
+  <!-- Suggested questions -->
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:0.4s">
+    <rect x="12" y="374" width="154" height="16" rx="99" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="89" y="385" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">Can I freelance while employed?</text>
+    <rect x="172" y="374" width="154" height="16" rx="99" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="249" y="385" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">What triggers immediate dismissal?</text>
+    <rect x="332" y="374" width="120" height="16" rx="99" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="392" y="385" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">Is equity vesting mentioned?</text>
+    <rect x="458" y="374" width="100" height="16" rx="99" fill="white" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="508" y="385" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">Which jurisdiction applies?</text>
+  </g>
+</svg>

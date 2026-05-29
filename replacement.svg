@@ -1,0 +1,129 @@
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" width="900" height="400">
+  <defs>
+    <style>
+      @keyframes fadeUp   { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes popIn    { from{opacity:0;transform:scale(0.88)} to{opacity:1;transform:scale(1)} }
+      @keyframes barShrink{ from{width:90px} to{width:var(--to)} }
+      @keyframes barGrow  { from{width:0}    to{width:var(--to)} }
+      @keyframes strikeIn { from{width:0}    to{width:100%} }
+      @keyframes checkPop { from{opacity:0;transform:scale(0)} to{opacity:1;transform:scale(1)} }
+    </style>
+  </defs>
+
+  <rect width="900" height="400" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect width="900" height="44" fill="white" stroke="#e2e8f0" stroke-width="0.5" style="animation:fadeUp 0.4s ease both"/>
+  <text x="20" y="28" font-family="'Georgia',serif" font-size="14" font-weight="bold" fill="#0f172a">⚖ ClauseGuard</text>
+  <rect x="140" y="12" width="56" height="20" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="0.5"/>
+  <text x="168" y="26" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#dc2626">CRITICAL</text>
+  <text x="204" y="28" font-family="'Courier New',monospace" font-size="10" fill="#94a3b8">Non-Compete Clause · §11.2 · Page 8</text>
+  <text x="870" y="28" text-anchor="end" font-family="'Courier New',monospace" font-size="10" fill="#dc2626" font-weight="bold">9.2 / 10</text>
+
+  <!-- Sub label -->
+  <text x="20" y="60" font-family="'Courier New',monospace" font-size="9" fill="#94a3b8" letter-spacing="1" style="animation:fadeUp 0.4s ease both; animation-delay:0.2s">STAGE 5 OUTPUT — ALTERNATIVE GENERATION · CLAUDE SONNET 4 · TEMP=0.1</text>
+
+  <!-- LEFT PANEL: Original -->
+  <rect x="12" y="70" width="428" height="316" rx="8" fill="white" stroke="#fca5a5" stroke-width="1" style="animation:popIn 0.5s ease both; animation-delay:0.3s"/>
+  <rect x="12" y="70" width="428" height="32" rx="8" fill="#fef2f2"/>
+  <rect x="12" y="90" width="428" height="12" fill="#fef2f2"/>
+  <text x="28" y="91" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#dc2626" letter-spacing="1">✗  ORIGINAL LANGUAGE</text>
+  <text x="428" y="91" text-anchor="end" font-family="'Courier New',monospace" font-size="9" fill="#dc2626">RISK: 9.2/10</text>
+
+  <!-- Original text block -->
+  <rect x="24" y="112" width="404" height="68" rx="5" fill="#fef2f2" stroke="#fecaca" stroke-width="0.5" style="animation:fadeUp 0.5s ease both; animation-delay:0.5s"/>
+  <text x="34" y="130" font-family="'Courier New',monospace" font-size="9.5" fill="#7f1d1d" font-style="italic">"Employee agrees not to directly or indirectly</text>
+  <text x="34" y="145" font-family="'Courier New',monospace" font-size="9.5" fill="#7f1d1d" font-style="italic">engage in any business that competes with</text>
+  <text x="34" y="160" font-family="'Courier New',monospace" font-size="9.5" fill="#7f1d1d" font-style="italic">Company's current or future business activities,</text>
+  <text x="34" y="175" font-family="'Courier New',monospace" font-size="9.5" fill="#7f1d1d" font-style="italic">globally, for a period of 60 months."</text>
+
+  <!-- Danger pills -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.7s">
+    <rect x="24" y="192" width="80" height="16" rx="3" fill="#fef2f2" stroke="#fca5a5" stroke-width="0.5"/>
+    <text x="64" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#dc2626">✗ Worldwide</text>
+    <rect x="110" y="192" width="58" height="16" rx="3" fill="#fef2f2" stroke="#fca5a5" stroke-width="0.5"/>
+    <text x="139" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#dc2626">✗ 60 months</text>
+    <rect x="174" y="192" width="84" height="16" rx="3" fill="#fef2f2" stroke="#fca5a5" stroke-width="0.5"/>
+    <text x="216" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#dc2626">✗ Future activities</text>
+    <rect x="264" y="192" width="72" height="16" rx="3" fill="#fef2f2" stroke="#fca5a5" stroke-width="0.5"/>
+    <text x="300" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#dc2626">✗ No carve-outs</text>
+  </g>
+
+  <!-- Risk bars BEFORE -->
+  <text x="24" y="228" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8" letter-spacing="1">RISK DIMENSIONS — BEFORE</text>
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:0.8s">
+    <text x="24" y="246" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Scope</text>
+    <rect x="80" y="238" width="90" height="6" rx="2" fill="#fef2f2"/>
+    <rect x="80" y="238" width="90" height="6" rx="2" fill="#dc2626" opacity="0.85"/>
+    <text x="24" y="260" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Duration</text>
+    <rect x="80" y="252" width="90" height="6" rx="2" fill="#fef2f2"/>
+    <rect x="80" y="252" width="90" height="6" rx="2" fill="#dc2626" opacity="0.85"/>
+    <text x="24" y="274" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Asymmetry</text>
+    <rect x="80" y="266" width="90" height="6" rx="2" fill="#fef2f2"/>
+    <rect x="80" y="266" width="80" height="6" rx="2" fill="#dc2626" opacity="0.75"/>
+    <text x="24" y="288" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Exit difficulty</text>
+    <rect x="80" y="280" width="90" height="6" rx="2" fill="#fef2f2"/>
+    <rect x="80" y="280" width="88" height="6" rx="2" fill="#dc2626" opacity="0.8"/>
+  </g>
+
+  <!-- Negotiation talking points -->
+  <text x="24" y="314" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#334155" style="animation:fadeUp 0.5s ease both; animation-delay:1.0s">NEGOTIATION POINTS</text>
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:1.1s">
+    <rect x="24" y="320" width="14" height="14" rx="3" fill="#eff6ff"/>
+    <text x="31" y="331" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#1d4ed8">1</text>
+    <text x="44" y="331" font-family="'Georgia',serif" font-size="10" fill="#334155">5-year non-competes are unenforceable in most Indian courts.</text>
+    <rect x="24" y="338" width="14" height="14" rx="3" fill="#eff6ff"/>
+    <text x="31" y="349" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#1d4ed8">2</text>
+    <text x="44" y="349" font-family="'Georgia',serif" font-size="10" fill="#334155">Ask them to define "competitor" via Schedule A with named firms.</text>
+    <rect x="24" y="356" width="14" height="14" rx="3" fill="#eff6ff"/>
+    <text x="31" y="367" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#1d4ed8">3</text>
+    <text x="44" y="367" font-family="'Georgia',serif" font-size="10" fill="#334155">Geographic carve-out: restrict only where you actually worked.</text>
+  </g>
+
+  <!-- RIGHT PANEL: Replacement -->
+  <rect x="460" y="70" width="428" height="316" rx="8" fill="white" stroke="#bbf7d0" stroke-width="1" style="animation:popIn 0.5s ease both; animation-delay:0.4s"/>
+  <rect x="460" y="70" width="428" height="32" rx="8" fill="#f0fdf4"/>
+  <rect x="460" y="90" width="428" height="12" fill="#f0fdf4"/>
+  <text x="476" y="91" font-family="'Courier New',monospace" font-size="9" font-weight="bold" fill="#166534" letter-spacing="1">✓  SAFER REPLACEMENT</text>
+  <text x="876" y="91" text-anchor="end" font-family="'Courier New',monospace" font-size="9" fill="#166534">RISK: 2.1/10</text>
+
+  <!-- Safer text block -->
+  <rect x="472" y="112" width="404" height="68" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="0.5" style="animation:fadeUp 0.5s ease both; animation-delay:0.6s"/>
+  <text x="482" y="130" font-family="'Courier New',monospace" font-size="9.5" fill="#14532d" font-style="italic">"Employee agrees not to compete with Company's</text>
+  <text x="482" y="145" font-family="'Courier New',monospace" font-size="9.5" fill="#14532d" font-style="italic">core products (defined in Schedule A), within</text>
+  <text x="482" y="160" font-family="'Courier New',monospace" font-size="9.5" fill="#14532d" font-style="italic">regions where Employee was active, for 12 months.</text>
+  <text x="482" y="175" font-family="'Courier New',monospace" font-size="9.5" fill="#14532d" font-style="italic">Unrelated roles are expressly excluded."</text>
+
+  <!-- Safe pills -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.8s">
+    <rect x="472" y="192" width="82" height="16" rx="3" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="0.5"/>
+    <text x="513" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#166534">✓ Scope defined</text>
+    <rect x="560" y="192" width="72" height="16" rx="3" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="0.5"/>
+    <text x="596" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#166534">✓ 12 months</text>
+    <rect x="638" y="192" width="82" height="16" rx="3" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="0.5"/>
+    <text x="679" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#166534">✓ Geo limited</text>
+    <rect x="726" y="192" width="74" height="16" rx="3" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="0.5"/>
+    <text x="763" y="203" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#166534">✓ Carve-out</text>
+  </g>
+
+  <!-- Risk bars AFTER (short = good) -->
+  <text x="472" y="228" font-family="'Courier New',monospace" font-size="8" fill="#94a3b8" letter-spacing="1">RISK DIMENSIONS — AFTER</text>
+  <g style="animation:fadeUp 0.5s ease both; animation-delay:0.9s">
+    <text x="472" y="246" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Scope</text>
+    <rect x="528" y="238" width="90" height="6" rx="2" fill="#f0fdf4"/>
+    <rect x="528" y="238" height="6" rx="2" fill="#22c55e"><animate attributeName="width" from="0" to="28" dur="0.7s" begin="1.0s" fill="freeze"/></rect>
+    <text x="472" y="260" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Duration</text>
+    <rect x="528" y="252" width="90" height="6" rx="2" fill="#f0fdf4"/>
+    <rect x="528" y="252" height="6" rx="2" fill="#22c55e"><animate attributeName="width" from="0" to="22" dur="0.7s" begin="1.1s" fill="freeze"/></rect>
+    <text x="472" y="274" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Asymmetry</text>
+    <rect x="528" y="266" width="90" height="6" rx="2" fill="#f0fdf4"/>
+    <rect x="528" y="266" height="6" rx="2" fill="#22c55e"><animate attributeName="width" from="0" to="32" dur="0.7s" begin="1.2s" fill="freeze"/></rect>
+    <text x="472" y="288" font-family="'Courier New',monospace" font-size="8" fill="#64748b">Exit difficulty</text>
+    <rect x="528" y="280" width="90" height="6" rx="2" fill="#f0fdf4"/>
+    <rect x="528" y="280" height="6" rx="2" fill="#22c55e"><animate attributeName="width" from="0" to="18" dur="0.7s" begin="1.3s" fill="freeze"/></rect>
+  </g>
+
+  <!-- Copy button -->
+  <rect x="472" y="355" width="404" height="24" rx="5" fill="#0f172a" style="animation:popIn 0.4s ease both; animation-delay:1.4s"/>
+  <text x="674" y="371" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="white">⎘  Copy replacement text to clipboard</text>
+</svg>

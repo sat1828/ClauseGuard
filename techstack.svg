@@ -1,0 +1,183 @@
+<svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" width="900" height="280">
+  <defs>
+    <style>
+      @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes popIn  { from{opacity:0;transform:scale(0.82)} to{opacity:1;transform:scale(1)} }
+      @keyframes pulse  { 0%,100%{opacity:1} 50%{opacity:0.55} }
+      .mono { font-family:'Courier New',monospace; }
+    </style>
+  </defs>
+
+  <rect width="900" height="280" fill="#0f172a"/>
+
+  <!-- subtle grid -->
+  <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0L0 0 0 24" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+  </pattern>
+  <rect width="900" height="280" fill="url(#g)"/>
+
+  <!-- Title -->
+  <text x="450" y="28" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#475569" letter-spacing="3" style="animation:fadeUp 0.4s ease both">TECH STACK — CLAUSEGUARD</text>
+
+  <!-- Row labels -->
+  <text x="16" y="64"  font-family="'Courier New',monospace" font-size="8" fill="#334155" letter-spacing="1">FRONTEND</text>
+  <text x="16" y="116" font-family="'Courier New',monospace" font-size="8" fill="#334155" letter-spacing="1">BACKEND</text>
+  <text x="16" y="168" font-family="'Courier New',monospace" font-size="8" fill="#334155" letter-spacing="1">AI / DATA</text>
+  <text x="16" y="220" font-family="'Courier New',monospace" font-size="8" fill="#334155" letter-spacing="1">INFRA</text>
+
+  <!-- dividers -->
+  <line x1="90" y1="44"  x2="890" y2="44"  stroke="#1e293b" stroke-width="0.5"/>
+  <line x1="90" y1="96"  x2="890" y2="96"  stroke="#1e293b" stroke-width="0.5"/>
+  <line x1="90" y1="148" x2="890" y2="148" stroke="#1e293b" stroke-width="0.5"/>
+  <line x1="90" y1="200" x2="890" y2="200" stroke="#1e293b" stroke-width="0.5"/>
+
+  <!-- ── FRONTEND ROW ── -->
+  <!-- Next.js -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.1s">
+    <rect x="92" y="48" width="86" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="135" y="63" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">Next.js 14</text>
+    <text x="135" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">App Router</text>
+  </g>
+  <!-- Tailwind -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.15s">
+    <rect x="184" y="48" width="108" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="238" y="63" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#38bdf8">Tailwind CSS</text>
+    <text x="238" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">+ shadcn/ui</text>
+  </g>
+  <!-- Framer Motion -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.2s">
+    <rect x="298" y="48" width="108" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="352" y="63" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#a78bfa">Framer Motion</text>
+    <text x="352" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">animations</text>
+  </g>
+  <!-- Recharts -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.25s">
+    <rect x="412" y="48" width="80" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="452" y="63" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fb923c">Recharts</text>
+    <text x="452" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">donut chart</text>
+  </g>
+  <!-- Zustand -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.3s">
+    <rect x="498" y="48" width="100" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="548" y="63" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">Zustand</text>
+    <text x="548" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">+ Immer state</text>
+  </g>
+  <!-- SSE -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.35s">
+    <rect x="604" y="48" width="80" height="38" rx="5" fill="#1e293b" stroke="#22c55e" stroke-width="0.5"/>
+    <text x="644" y="63" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#4ade80">SSE</text>
+    <text x="644" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">streaming chat</text>
+  </g>
+  <!-- TypeScript -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.4s">
+    <rect x="690" y="48" width="90" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="735" y="63" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#60a5fa">TypeScript</text>
+    <text x="735" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">strict mode</text>
+  </g>
+
+  <!-- ── BACKEND ROW ── -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.2s">
+    <rect x="92" y="100" width="100" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="142" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#34d399">FastAPI 0.111</text>
+    <text x="142" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">+ Uvicorn</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.25s">
+    <rect x="198" y="100" width="108" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="252" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#60a5fa">PostgreSQL 15</text>
+    <text x="252" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">+ pgvector</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.3s">
+    <rect x="312" y="100" width="112" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="368" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#60a5fa">SQLAlchemy 2</text>
+    <text x="368" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">async + Alembic</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.35s">
+    <rect x="430" y="100" width="90" height="38" rx="5" fill="#1e293b" stroke="#fbbf24" stroke-width="0.5"/>
+    <text x="475" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fbbf24">Pydantic v2</text>
+    <text x="475" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">strict schemas</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.4s">
+    <rect x="526" y="100" width="84" height="38" rx="5" fill="#1e293b" stroke="#fbbf24" stroke-width="0.5"/>
+    <text x="568" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fbbf24">Tenacity</text>
+    <text x="568" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">exp backoff</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.45s">
+    <rect x="616" y="100" width="80" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="656" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">PyMuPDF</text>
+    <text x="656" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">fitz / PDF</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.5s">
+    <rect x="702" y="100" width="86" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="745" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">python-docx</text>
+    <text x="745" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">DOCX parse</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.55s">
+    <rect x="794" y="100" width="72" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="830" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">tiktoken</text>
+    <text x="830" y="129" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">chunk size</text>
+  </g>
+
+  <!-- ── AI / DATA ROW ── -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.3s">
+    <rect x="92" y="152" width="118" height="38" rx="5" fill="#7f1d1d" stroke="#dc2626" stroke-width="0.5"/>
+    <text x="151" y="167" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#fca5a5">Claude Sonnet 4</text>
+    <text x="151" y="181" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#f87171">all LLM stages</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.35s">
+    <rect x="216" y="152" width="136" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="284" y="167" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">OpenAI embed-3-sm</text>
+    <text x="284" y="181" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">1536d · embeddings</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.4s">
+    <rect x="358" y="152" width="82" height="38" rx="5" fill="#0c4a6e" stroke="#0ea5e9" stroke-width="0.5"/>
+    <text x="399" y="167" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#7dd3fc">Pinecone</text>
+    <text x="399" y="181" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#38bdf8">serverless</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.45s">
+    <rect x="446" y="152" width="74" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="483" y="167" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">pgvector</text>
+    <text x="483" y="181" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">local vector</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.5s">
+    <rect x="526" y="152" width="90" height="38" rx="5" fill="#1e293b" stroke="#a78bfa" stroke-width="0.5"/>
+    <text x="571" y="167" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#c4b5fd">LangSmith</text>
+    <text x="571" y="181" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#a78bfa">observability</text>
+  </g>
+
+  <!-- ── INFRA ROW ── -->
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.4s">
+    <rect x="92" y="204" width="72" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="128" y="219" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">Vercel</text>
+    <text x="128" y="233" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">frontend</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.45s">
+    <rect x="170" y="204" width="76" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="208" y="219" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">Railway</text>
+    <text x="208" y="233" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">backend API</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.5s">
+    <rect x="252" y="204" width="72" height="38" rx="5" fill="#1e293b" stroke="#22c55e" stroke-width="0.5"/>
+    <text x="288" y="219" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#4ade80">Docker</text>
+    <text x="288" y="233" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">local dev</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.55s">
+    <rect x="330" y="204" width="62" height="38" rx="5" fill="#1e293b" stroke="#f87171" stroke-width="0.5"/>
+    <text x="361" y="219" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f87171">Redis</text>
+    <text x="361" y="233" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">caching</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.6s">
+    <rect x="398" y="204" width="100" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="448" y="219" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">Python 3.11</text>
+    <text x="448" y="233" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">runtime</text>
+  </g>
+  <g style="animation:popIn 0.4s ease both; animation-delay:0.65s">
+    <rect x="504" y="204" width="80" height="38" rx="5" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+    <text x="544" y="219" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#f8fafc">Node 18+</text>
+    <text x="544" y="233" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#475569">frontend</text>
+  </g>
+
+  <!-- Bottom meta -->
+  <text x="450" y="262" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#334155" style="animation:fadeUp 0.4s ease both; animation-delay:0.8s">
+    Every LLM call traced on LangSmith · temp=0 enforced on all risk-scoring stages · Pydantic v2 validates every model output before DB write
+  </text>
+</svg>
