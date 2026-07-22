@@ -1,0 +1,44 @@
+.error-boundary {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg, #EEE9DC);
+  padding: var(--space-5, 24px);
+}
+
+.error-boundary__card {
+  max-width: 420px;
+  text-align: center;
+  background: var(--bg-raised, #FBF9F3);
+  border: 1px solid var(--border, #D8D0B7);
+  border-radius: var(--radius-lg, 20px);
+  padding: var(--space-7, 48px) var(--space-6, 32px);
+  box-shadow: var(--shadow-md, 0 8px 24px rgba(36,28,22,0.1));
+}
+
+.error-boundary__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm, 6px);
+  background: var(--brand, #7A2436);
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 24px;
+  margin-bottom: var(--space-5, 24px);
+}
+
+.error-boundary__card h1 {
+  font-size: 22px;
+  margin-bottom: var(--space-3, 12px);
+}
+
+.error-boundary__card p {
+  color: var(--ink-soft, #5C5040);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: var(--space-5, 24px);
+}

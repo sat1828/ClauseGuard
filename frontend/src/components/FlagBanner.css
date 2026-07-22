@@ -1,0 +1,40 @@
+.flag-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  width: 100%;
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-bottom: var(--space-2);
+  font-size: 13.5px;
+}
+
+.flag-banner--critical {
+  background: var(--risk-critical-tint);
+  border-color: var(--risk-critical);
+  color: var(--risk-critical);
+}
+
+.flag-banner--warning {
+  background: var(--risk-medium-tint);
+  border-color: var(--risk-medium);
+  color: var(--risk-medium);
+}
+
+.flag-banner__icon {
+  font-size: 15px;
+  line-height: 1;
+  margin-top: 1px;
+}
+
+.flag-banner__text {
+  color: var(--ink);
+}
+
+.flag-banner__body {
+  color: var(--ink-soft);
+  font-weight: 400;
+}

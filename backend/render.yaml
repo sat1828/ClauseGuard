@@ -1,0 +1,53 @@
+# Render "Hobby" (free) blueprint — configured for GENUINE persistence.
+#
+# Render's free web services have no persistent disk of their own (only
+# paid plans do), so this points DATABASE_URL and storage at two external
+# free services instead of local disk: Neon (Postgres) and Cloudflare R2
+# (S3-compatible object storage). Both have real, non-expiring free tiers.
+# Fill in the four "sync: false" values in Render's dashboard after import
+# — see backend/README.md "Deploying for real" for exactly where to get each one.
+services:
+  - type: web
+    name: clauseguard-backend
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false   # Neon connection string, postgresql+asyncpg://...
+      - key: FRONTEND_URL
+        sync: false   # your Vercel URL, e.g. https://clauseguard.vercel.app
+      - key: STORAGE_BACKEND
+        value: s3
+      - key: S3_BUCKET
+        sync: false
+      - key: S3_ENDPOINT_URL
+        sync: false   # your R2 account's S3 endpoint
+      - key: S3_ACCESS_KEY_ID
+        sync: false
+      - key: S3_SECRET_ACCESS_KEY
+        sync: false
+      - key: S3_REGION
+        value: auto
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: STRIPE_PRICE_STARTER
+        sync: false
+      - key: STRIPE_PRICE_PRO
+        sync: false
+    healthCheckPath: /health
+
+# Quicker-but-not-persistent alternative: delete the DATABASE_URL,
+# STORAGE_BACKEND, and S3_* lines above and use these two instead. Fine for
+# a demo; uploaded files and the database both get wiped on every restart.
+#     - key: DATABASE_URL
+#       value: sqlite+aiosqlite:///./storage/clauseguard.db
+#     - key: STORAGE_BACKEND
+#       value: local

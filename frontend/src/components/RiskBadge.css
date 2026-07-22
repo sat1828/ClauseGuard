@@ -1,0 +1,49 @@
+.risk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.risk-badge--md {
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+.risk-badge--lg {
+  font-size: 14px;
+  padding: 7px 16px;
+}
+
+.risk-badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.risk-badge--low {
+  color: var(--risk-low);
+  background: var(--risk-low-tint);
+}
+.risk-badge--low .risk-badge__dot { background: var(--risk-low); }
+
+.risk-badge--medium {
+  color: var(--risk-medium);
+  background: var(--risk-medium-tint);
+}
+.risk-badge--medium .risk-badge__dot { background: var(--risk-medium); }
+
+.risk-badge--high {
+  color: var(--risk-high);
+  background: var(--risk-high-tint);
+}
+.risk-badge--high .risk-badge__dot { background: var(--risk-high); }
+
+.risk-badge--critical {
+  color: var(--risk-critical);
+  background: var(--risk-critical-tint);
+}
+.risk-badge--critical .risk-badge__dot { background: var(--risk-critical); }

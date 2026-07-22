@@ -1,0 +1,67 @@
+.settings-page {
+  padding: var(--space-6) var(--space-5) var(--space-8);
+  max-width: 640px;
+  flex: 1;
+}
+
+.settings-page h1 {
+  font-size: 26px;
+  margin-bottom: var(--space-5);
+}
+
+.settings-section {
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.settings-section h2 {
+  font-size: 17px;
+  margin-bottom: var(--space-4);
+}
+
+.settings-section__desc {
+  font-size: 13.5px;
+  color: var(--ink-faint);
+  margin-bottom: var(--space-4);
+  line-height: 1.6;
+}
+
+.settings-list {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: var(--space-3) var(--space-4);
+  margin: 0;
+}
+
+.settings-list dt {
+  font-size: 13px;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+
+.settings-list dd {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.settings-verified {
+  color: var(--risk-low);
+  font-weight: 600;
+}
+
+.settings-unverified {
+  color: var(--risk-medium);
+}
+
+.settings-inline-btn {
+  background: none;
+  border: none;
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: var(--space-2);
+  text-decoration: underline;
+}

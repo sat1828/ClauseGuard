@@ -1,0 +1,29 @@
+.status-pill {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.status-pill--pending {
+  background: var(--bg-sunken);
+  color: var(--ink-faint);
+}
+
+.status-pill--processing {
+  background: var(--brand-tint);
+  color: var(--brand-soft);
+}
+
+.status-pill--complete {
+  background: var(--risk-low-tint);
+  color: var(--risk-low);
+}
+
+.status-pill--failed {
+  background: var(--risk-critical-tint);
+  color: var(--risk-critical);
+}

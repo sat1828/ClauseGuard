@@ -1,0 +1,49 @@
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      # Overridable in .env; sane in-container defaults here so this works
+      # even if the person forgot to set them.
+      - DATABASE_URL=${DATABASE_URL:-sqlite+aiosqlite:///./storage/clauseguard.db}
+    volumes:
+      - backend_storage:/app/storage
+    ports:
+      - "8000:8000"   # exposed directly too, so /docs is reachable for debugging
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: ""   # same-origin — nginx proxies /api/ to the backend service
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Optional: switch DATABASE_URL in backend/.env to
+  # postgresql+asyncpg://clauseguard:clauseguard@postgres:5432/clauseguard
+  # and uncomment this service for a real production database instead of SQLite.
+  # postgres:
+  #   image: postgres:16-alpine
+  #   environment:
+  #     POSTGRES_USER: clauseguard
+  #     POSTGRES_PASSWORD: clauseguard
+  #     POSTGRES_DB: clauseguard
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+
+volumes:
+  backend_storage:
+  # postgres_data:

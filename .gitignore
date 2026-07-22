@@ -1,0 +1,9 @@
+.DS_Store
+*.log
+.vscode/
+.idea/
+*.swp
+
+# Each of backend/ and frontend/ has its own more specific .gitignore for
+# venv/node_modules/.env/build output — this root file is just a safety net
+# for OS and editor cruft that could land at the repo root.

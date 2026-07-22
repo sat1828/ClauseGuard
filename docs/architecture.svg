@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#A97C2F"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7A2436"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="780" fill="#EEE9DC"/>
+
+  <!-- Title -->
+  <text x="60" y="56" font-size="28" font-weight="700" fill="#241C16">ClauseGuard — System Architecture</text>
+  <text x="60" y="80" font-size="13" fill="#5C5040" font-family="Courier New, monospace">§ every arrow below is a real network call this codebase actually makes</text>
+
+  <!-- ===================== CLIENT LAYER ===================== -->
+  <rect x="60" y="120" width="300" height="130" rx="14" fill="#FBF9F3" stroke="#7A2436" stroke-width="2"/>
+  <text x="80" y="150" font-size="17" font-weight="700" fill="#241C16">Browser</text>
+  <text x="80" y="172" font-size="12.5" fill="#5C5040">React 19 + Vite SPA</text>
+  <text x="80" y="190" font-size="12.5" fill="#5C5040">React Router · Context (Auth/Theme)</text>
+  <text x="80" y="208" font-size="12.5" fill="#5C5040">fetch-based API client, token refresh</text>
+  <text x="80" y="226" font-size="12.5" fill="#5C5040">on 401, dedupe-guarded</text>
+  <text x="80" y="240" font-size="11" fill="#948968" font-family="Courier New, monospace">Vercel / any static host</text>
+
+  <!-- ===================== NGINX (prod path) ===================== -->
+  <rect x="430" y="120" width="260" height="130" rx="14" fill="#FBF9F3" stroke="#A97C2F" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="450" y="150" font-size="16" font-weight="700" fill="#241C16">nginx (Docker only)</text>
+  <text x="450" y="172" font-size="12.5" fill="#5C5040">Serves the built SPA</text>
+  <text x="450" y="190" font-size="12.5" fill="#5C5040">Proxies /api/* to backend</text>
+  <text x="450" y="208" font-size="12.5" fill="#5C5040">— same-origin, zero CORS</text>
+  <text x="450" y="226" font-size="11" fill="#948968" font-family="Courier New, monospace">skipped entirely on Vercel</text>
+
+  <line x1="360" y1="185" x2="430" y2="185" stroke="#A97C2F" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===================== BACKEND ===================== -->
+  <rect x="60" y="300" width="630" height="200" rx="16" fill="#FBF9F3" stroke="#7A2436" stroke-width="2.5"/>
+  <text x="82" y="332" font-size="19" font-weight="700" fill="#241C16">FastAPI Backend</text>
+  <text x="82" y="352" font-size="12" fill="#948968" font-family="Courier New, monospace">Python 3.11 · async SQLAlchemy · JWT + refresh tokens</text>
+
+  <!-- backend sub-modules -->
+  <rect x="82" y="368" width="180" height="112" rx="8" fill="#F1E6CE" stroke="#A97C2F" stroke-width="1.2"/>
+  <text x="96" y="390" font-size="12.5" font-weight="700" fill="#241C16">Routers</text>
+  <text x="96" y="408" font-size="11" fill="#5C5040">auth · documents</text>
+  <text x="96" y="424" font-size="11" fill="#5C5040">billing</text>
+  <text x="96" y="440" font-size="11" fill="#5C5040">18 endpoints total</text>
+  <text x="96" y="460" font-size="10.5" fill="#948968">rate-limited, per-user</text>
+  <text x="96" y="474" font-size="10.5" fill="#948968">data isolation enforced</text>
+
+  <rect x="278" y="368" width="200" height="112" rx="8" fill="#F1E6CE" stroke="#A97C2F" stroke-width="1.2"/>
+  <text x="292" y="390" font-size="12.5" font-weight="700" fill="#241C16">Analysis Pipeline</text>
+  <text x="292" y="408" font-size="11" fill="#5C5040">parse (PDF/DOCX + OCR)</text>
+  <text x="292" y="424" font-size="11" fill="#5C5040">segment → classify</text>
+  <text x="292" y="440" font-size="11" fill="#5C5040">score → flag</text>
+  <text x="292" y="460" font-size="10.5" fill="#948968">in-process asyncio queue</text>
+  <text x="292" y="474" font-size="10.5" fill="#948968">5 concurrent workers</text>
+
+  <rect x="494" y="368" width="176" height="112" rx="8" fill="#F1E6CE" stroke="#A97C2F" stroke-width="1.2"/>
+  <text x="508" y="390" font-size="12.5" font-weight="700" fill="#241C16">Validation Layer</text>
+  <text x="508" y="408" font-size="11" fill="#5C5040">strict pydantic schema</text>
+  <text x="508" y="424" font-size="11" fill="#5C5040">on every AI response</text>
+  <text x="508" y="444" font-size="10.5" fill="#948968">bad output →</text>
+  <text x="508" y="458" font-size="10.5" fill="#948968">analysis_failed=true,</text>
+  <text x="508" y="472" font-size="10.5" fill="#948968">never shown raw</text>
+
+  <line x1="375" y1="250" x2="375" y2="300" stroke="#7A2436" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- ===================== DATA / STORAGE ===================== -->
+  <rect x="60" y="560" width="290" height="160" rx="14" fill="#FBF9F3" stroke="#3F6B44" stroke-width="2"/>
+  <text x="80" y="592" font-size="16" font-weight="700" fill="#241C16">Database</text>
+  <text x="80" y="614" font-size="12" fill="#5C5040">SQLite (default, zero setup)</text>
+  <text x="80" y="632" font-size="12" fill="#5C5040">→ Postgres via one env var</text>
+  <text x="80" y="654" font-size="11" fill="#948968" font-family="Courier New, monospace">users · documents</text>
+  <text x="80" y="670" font-size="11" fill="#948968" font-family="Courier New, monospace">clauses · flags</text>
+  <text x="80" y="686" font-size="11" fill="#948968" font-family="Courier New, monospace">refresh_tokens · stripe_events</text>
+  <text x="80" y="702" font-size="10.5" fill="#A85220">FK columns explicitly indexed</text>
+
+  <rect x="380" y="560" width="280" height="160" rx="14" fill="#FBF9F3" stroke="#3F6B44" stroke-width="2"/>
+  <text x="400" y="592" font-size="16" font-weight="700" fill="#241C16">File Storage</text>
+  <text x="400" y="614" font-size="12" fill="#5C5040">Local disk OR S3/R2</text>
+  <text x="400" y="632" font-size="12" fill="#5C5040">one env var switches backend</text>
+  <text x="400" y="654" font-size="11" fill="#948968">path-traversal guarded</text>
+  <text x="400" y="670" font-size="11" fill="#948968">filenames sanitized</text>
+  <text x="400" y="690" font-size="10.5" fill="#3F6B44">S3/R2 backend: implemented + tested</text>
+
+  <line x1="205" y1="500" x2="205" y2="560" stroke="#3F6B44" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="520" y1="500" x2="520" y2="560" stroke="#3F6B44" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===================== EXTERNAL SERVICES ===================== -->
+  <rect x="760" y="300" width="380" height="130" rx="14" fill="#FBF9F3" stroke="#7A2436" stroke-width="2"/>
+  <text x="780" y="332" font-size="17" font-weight="700" fill="#241C16">Groq</text>
+  <text x="780" y="352" font-size="12" fill="#5C5040">Llama 3.3 70B, free tier</text>
+  <text x="780" y="370" font-size="12" fill="#5C5040">clause classification + scoring</text>
+  <text x="780" y="392" font-size="11" fill="#948968">strict JSON mode, 3 retries</text>
+  <text x="780" y="408" font-size="11" fill="#948968">confidence blended w/ heuristic</text>
+  <line x1="690" y1="368" x2="760" y2="368" stroke="#7A2436" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <line x1="760" y1="380" x2="690" y2="380" stroke="#7A2436" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <rect x="760" y="460" width="380" height="130" rx="14" fill="#FBF9F3" stroke="#A97C2F" stroke-width="2"/>
+  <text x="780" y="492" font-size="17" font-weight="700" fill="#241C16">Stripe</text>
+  <text x="780" y="512" font-size="12" fill="#5C5040">Checkout (subscriptions)</text>
+  <text x="780" y="530" font-size="12" fill="#5C5040">signed webhooks, idempotent</text>
+  <text x="780" y="552" font-size="11" fill="#948968">plan upgrade/downgrade</text>
+  <text x="780" y="568" font-size="11" fill="#948968">renewal resets usage counter</text>
+  <line x1="690" y1="420" x2="900" y2="460" stroke="#A97C2F" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="760" y="620" width="380" height="100" rx="14" fill="#FBF9F3" stroke="#948968" stroke-width="2"/>
+  <text x="780" y="652" font-size="17" font-weight="700" fill="#241C16">SMTP</text>
+  <text x="780" y="672" font-size="12" fill="#5C5040">verification + password reset</text>
+  <text x="780" y="694" font-size="11" fill="#948968">unconfigured → logs the link instead</text>
+  <line x1="690" y1="440" x2="900" y2="620" stroke="#948968" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <text x="60" y="750" font-size="11.5" fill="#5C5040" font-family="Courier New, monospace">— solid line: verified by an automated test that ran   ┄ dashed: config-gated / optional at runtime</text>
+</svg>

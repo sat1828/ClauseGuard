@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7A2436"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="460" fill="#EEE9DC"/>
+  <text x="60" y="52" font-size="26" font-weight="700" fill="#241C16">Request Lifecycle — One Upload, Start to Finish</text>
+  <text x="60" y="76" font-size="12.5" fill="#5C5040" font-family="Courier New, monospace">§ every stage below is a real function in app/job_queue.py, in this order</text>
+
+  <!-- stages -->
+  <g font-size="12.5">
+    <!-- 1 -->
+    <rect x="60" y="130" width="140" height="150" rx="12" fill="#FBF9F3" stroke="#7A2436" stroke-width="2"/>
+    <text x="80" y="158" font-weight="700" fill="#241C16">1. Upload</text>
+    <text x="80" y="180" fill="#5C5040">HTTP returns</text>
+    <text x="80" y="196" fill="#5C5040">immediately —</text>
+    <text x="80" y="212" fill="#5C5040">job enqueued,</text>
+    <text x="80" y="228" fill="#5C5040">never blocks</text>
+    <text x="80" y="244" fill="#5C5040">the request.</text>
+    <text x="80" y="264" font-size="10.5" fill="#A97C2F">status: pending</text>
+
+    <!-- 2 -->
+    <rect x="228" y="130" width="140" height="150" rx="12" fill="#FBF9F3" stroke="#7A2436" stroke-width="2"/>
+    <text x="248" y="158" font-weight="700" fill="#241C16">2. Parse</text>
+    <text x="248" y="180" fill="#5C5040">PyMuPDF or</text>
+    <text x="248" y="196" fill="#5C5040">python-docx.</text>
+    <text x="248" y="212" fill="#5C5040">OCR fallback</text>
+    <text x="248" y="228" fill="#5C5040">if &lt;100 chars</text>
+    <text x="248" y="244" fill="#5C5040">per page.</text>
+    <text x="248" y="264" font-size="10.5" fill="#A97C2F">status: processing</text>
+
+    <!-- 3 -->
+    <rect x="396" y="130" width="140" height="150" rx="12" fill="#FBF9F3" stroke="#7A2436" stroke-width="2"/>
+    <text x="416" y="158" font-weight="700" fill="#241C16">3. Segment</text>
+    <text x="416" y="180" fill="#5C5040">Numbered →</text>
+    <text x="416" y="196" fill="#5C5040">headings →</text>
+    <text x="416" y="212" fill="#5C5040">paragraphs →</text>
+    <text x="416" y="228" fill="#5C5040">fixed chunks.</text>
+    <text x="416" y="244" fill="#5C5040">Never returns 0.</text>
+    <text x="416" y="264" font-size="10.5" fill="#A97C2F">max 60 clauses</text>
+
+    <!-- 4 -->
+    <rect x="564" y="130" width="150" height="150" rx="12" fill="#F1E6CE" stroke="#A97C2F" stroke-width="2.4"/>
+    <text x="584" y="158" font-weight="700" fill="#241C16">4. Analyze</text>
+    <text x="584" y="180" fill="#5C5040">Groq, one call</text>
+    <text x="584" y="196" fill="#5C5040">per clause.</text>
+    <text x="584" y="212" fill="#5C5040">Strict JSON,</text>
+    <text x="584" y="228" fill="#5C5040">3 retries,</text>
+    <text x="584" y="244" fill="#5C5040">schema-validated.</text>
+    <text x="584" y="264" font-size="10.5" fill="#7A2436">the only network hop</text>
+
+    <!-- 5 -->
+    <rect x="742" y="130" width="140" height="150" rx="12" fill="#FBF9F3" stroke="#7A2436" stroke-width="2"/>
+    <text x="762" y="158" font-weight="700" fill="#241C16">5. Score</text>
+    <text x="762" y="180" fill="#5C5040">Weighted avg,</text>
+    <text x="762" y="196" fill="#5C5040">critical clauses</text>
+    <text x="762" y="212" fill="#5C5040">(9-10) count</text>
+    <text x="762" y="228" fill="#5C5040">double. Failed</text>
+    <text x="762" y="244" fill="#5C5040">clauses excluded,</text>
+    <text x="762" y="260" fill="#5C5040">not zeroed.</text>
+
+    <!-- 6 -->
+    <rect x="910" y="130" width="140" height="150" rx="12" fill="#FBF9F3" stroke="#7A2436" stroke-width="2"/>
+    <text x="930" y="158" font-weight="700" fill="#241C16">6. Flag</text>
+    <text x="930" y="180" fill="#5C5040">Auto-renewal,</text>
+    <text x="930" y="196" fill="#5C5040">uncapped</text>
+    <text x="930" y="212" fill="#5C5040">liability, IP</text>
+    <text x="930" y="228" fill="#5C5040">grab, price</text>
+    <text x="930" y="244" fill="#5C5040">escalation.</text>
+    <text x="930" y="264" font-size="10.5" fill="#A97C2F">status: complete</text>
+  </g>
+
+  <line x1="200" y1="205" x2="228" y2="205" stroke="#7A2436" stroke-width="2" marker-end="url(#a1)"/>
+  <line x1="368" y1="205" x2="396" y2="205" stroke="#7A2436" stroke-width="2" marker-end="url(#a1)"/>
+  <line x1="536" y1="205" x2="564" y2="205" stroke="#7A2436" stroke-width="2" marker-end="url(#a1)"/>
+  <line x1="714" y1="205" x2="742" y2="205" stroke="#7A2436" stroke-width="2" marker-end="url(#a1)"/>
+  <line x1="882" y1="205" x2="910" y2="205" stroke="#7A2436" stroke-width="2" marker-end="url(#a1)"/>
+
+  <!-- failure branches -->
+  <text x="60" y="340" font-size="14" font-weight="700" fill="#7A2436">What happens when a stage fails, honestly:</text>
+  <text x="60" y="368" font-size="12" fill="#5C5040">Parse fails (password-protected, corrupt, &lt;50 words) → status: failed, specific error_code returned, nothing downstream runs.</text>
+  <text x="60" y="390" font-size="12" fill="#5C5040">Segmentation returns 0 clauses → status: failed with "no_clauses" — this has never actually happened in testing, but it's handled.</text>
+  <text x="60" y="412" font-size="12" fill="#5C5040">A clause fails AI analysis (bad JSON, schema mismatch) → that ONE clause gets analysis_failed=true. The other clauses still complete.</text>
+  <text x="60" y="434" font-size="12" fill="#5C5040">If every clause fails → status: failed. If 1+ but not all fail → status: complete, partial_analysis: true, shown honestly in the UI.</text>
+</svg>
