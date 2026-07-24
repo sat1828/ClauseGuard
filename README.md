@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="docs/screenshots/results.png" alt="ClauseGuard contract analysis results page" width="820"/>
-
 # ClauseGuard
 
 **You sign contracts alone. This reads them with you.**
